@@ -1,0 +1,36 @@
+{
+  "name": "@jstype/ipc-emitter",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "clean": "rimraf *{.js,.js.map,.d.ts} test/**/*{.js,.js.map,.d.ts}",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && mocha test/main.js",
+    "cover": "nyc npm test"
+  },
+  "author": "jKey Lu <jkeylu@gmail.com> (https://github.com/jkeylu)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.18",
+    "mocha": "^3.4.1",
+    "nyc": "^10.3.2",
+    "rimraf": "^2.6.1",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.3.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstype/ipc-emitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jstype/ipc-emitter/issues"
+  },
+  "homepage": "https://github.com/jstype/ipc-emitter#readme"
+}
